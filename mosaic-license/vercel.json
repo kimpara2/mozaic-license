@@ -1,0 +1,7 @@
+{
+  "functions": {
+    "api/webhook/stripe.js": { "runtime": "nodejs20.x" },
+    "api/issue-license.js":   { "runtime": "nodejs20.x" },
+    "api/license/verify.js":  { "runtime": "nodejs20.x" }
+  }
+}
