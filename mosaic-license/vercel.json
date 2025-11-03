@@ -1,7 +1,13 @@
 {
+  "version": 3,
   "functions": {
-    "api/webhook/stripe.js": { "runtime": "nodejs20.x" },
-    "api/issue-license.js":   { "runtime": "nodejs20.x" },
-    "api/license/verify.js":  { "runtime": "nodejs20.x" }
-  }
+    "issue-license.js":       { "runtime": "nodejs20.x" },
+    "verify.js":              { "runtime": "nodejs20.x" },
+    "stripe.js":              { "runtime": "nodejs20.x" }
+  },
+  "rewrites": [
+    { "source": "/api/issue-license",   "destination": "/issue-license.js" },
+    { "source": "/api/license/verify",  "destination": "/verify.js" },
+    { "source": "/api/webhook/stripe",  "destination": "/stripe.js" }
+  ]
 }
