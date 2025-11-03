@@ -1,6 +1,6 @@
-import { stripe } from "./_stripe.js";
-import { supabase } from "./_supabase.js";
-import { generateLicenseKey, hashLicense } from "./_crypto.js";
+import { stripe } from '../lib/_stripe.js';
+import { supabase } from '../lib/_supabase.js';
+import { generateLicenseKey, hashLicense } from '../lib/_crypto.js';
 
 async function readJson(req) {
   return new Promise((resolve, reject) => {
